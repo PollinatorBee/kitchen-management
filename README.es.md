@@ -1,6 +1,6 @@
 🌐 Available in [English](./README.md) | Disponible en [Español](./README.es.md)
 
-# 🍽️ Kitchen Management Web App
+# 🍽️ Kitchen Management Web App | CocinApp
 
 ### 🧾 Descripción
 Este proyecto es una aplicación web responsive construida con JavaScript y Firebase. Incluye autenticación de usuario, base de datos Firestore, y Firebase hosting.
@@ -24,7 +24,7 @@ Esta es una versión demo del proyecto, con datos de ejemplo y un entorno de Fir
 - **Project management:** Trello, Discord para reuniones con el equipo  
 
 ### 🌐 Demo
-🔗 [Demo online](https://your-demo-link.web.app)  
+🔗 [Demo online](https://pollinatorbee.github.io/kitchen-management/)  
 *(Hosteada en Firebase — versión de demostración con datos ficticios)*
 
 ⚙️ La base de datos Firestore para esta demo es reseteada automaticamente cada dia para restaurar los datos por defecto.
