@@ -52,7 +52,6 @@ function cargarScripts() {
       const langScript = document.createElement('script');
       langScript.type = 'module';
       //si el documento esta dentro de pages (no es el index)
-        currentLocation = window.location.href.split("/").pop();
         if (currentLocation == 'index.html' || 'kitchen-management')
         {
             langScript.src = './js/lang.js';       
@@ -64,8 +63,6 @@ function cargarScripts() {
       const idiomaScript = document.createElement('script');
       idiomaScript.type = 'module';
       //si el documento esta dentro de pages (no es el index)
-      window.location.href.split("/").pop() == 'index.html'? idiomaScript.src = './js/idioma.js' : idiomaScript.src = '../js/idioma.js';
-        currentLocation = window.location.href.split("/").pop();
         if (currentLocation == 'index.html' || 'kitchen-management')
         {
             idiomaScript.src = './js/idioma.js';       
