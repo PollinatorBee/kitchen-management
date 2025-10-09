@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
         logo.href = './index.html' //la url del logo sera el actual
     }
-    else if (currentLocation == 'kitchen-management')//la web esta hosteada de forma que la url termina en kitchen-management/ (github pages)
+    else if (currentLocation == '')//la web esta hosteada de forma que la url termina en kitchen-management/ (github pages)
     {
         logo.href = './kitchen-management' //en lugar de reemplazar la ultima seccion por index.html, sera la carpeta root del repositorio
     }
