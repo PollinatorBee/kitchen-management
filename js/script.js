@@ -23,7 +23,12 @@ function cargarScripts() {
       const firebaseConfigScript = document.createElement('script');
       firebaseConfigScript.type = 'module';
       //si el documento esta dentro de pages (no es el index)
-      window.location.href.split("/").pop() == 'index.html'? firebaseConfigScript.src = './js/firebase-config.js' : firebaseConfigScript.src = '../js/firebase-config.js';
+      let currentLocation = window.location.href.split("/").pop();
+      if (currentLocation == 'index.html' || 'kitchen-management')
+      {
+          firebaseConfigScript.src = './js/firebase-config.js';       
+      }
+      else {firebaseConfigScript.src = '../js/firebase-config.js';}
       body.appendChild(firebaseConfigScript);
 
       //si la página es login.html se cargará el script auth.js
@@ -32,16 +37,27 @@ function cargarScripts() {
         // Script de log.js
         const logScript = document.createElement('script');
         logScript.type = 'module';
-        //si el documento esta dentro de pages (no es el index)
-        window.location.href.split("/").pop() == 'index.html'? logScript.src = './js/log.js' : logScript.src = '../js/log.js';
-        body.appendChild(logScript);
+        //si el documento esta dentro de pages (no es el index)          
+        let currentLocation = window.location.href.split("/").pop();
+        if (currentLocation == 'index.html' || 'kitchen-management')
+        {
+            logScript.src = './js/log.js';       
+        }
+        else {logScript.src = '../js/log.js';}
+        
+          body.appendChild(logScript);
       }
 
       // Script de firebase-config.js
       const langScript = document.createElement('script');
       langScript.type = 'module';
       //si el documento esta dentro de pages (no es el index)
-      window.location.href.split("/").pop() == 'index.html'? langScript.src = './js/lang.js' : langScript.src = '../js/lang.js';
+        let currentLocation = window.location.href.split("/").pop();
+        if (currentLocation == 'index.html' || 'kitchen-management')
+        {
+            langScript.src = './js/lang.js';       
+        }
+        else {langScript.src = '../js/lang.js';}
       body.appendChild(langScript);
 
       // Script de firebase-config.js
@@ -49,6 +65,12 @@ function cargarScripts() {
       idiomaScript.type = 'module';
       //si el documento esta dentro de pages (no es el index)
       window.location.href.split("/").pop() == 'index.html'? idiomaScript.src = './js/idioma.js' : idiomaScript.src = '../js/idioma.js';
+        let currentLocation = window.location.href.split("/").pop();
+        if (currentLocation == 'index.html' || 'kitchen-management')
+        {
+            idiomaScript.src = './js/idioma.js';       
+        }
+        else {idiomaScript.src = '../js/idioma.js';}
       body.appendChild(idiomaScript);
 }
 
