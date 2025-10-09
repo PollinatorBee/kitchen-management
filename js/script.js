@@ -24,7 +24,7 @@ function cargarScripts() {
       firebaseConfigScript.type = 'module';
       //si el documento esta dentro de pages (no es el index)
       let currentLocation = window.location.href.split("/").pop();
-      if (currentLocation == 'index.html' || 'kitchen-management')
+      if (currentLocation == 'index.html' || '')
       {
           firebaseConfigScript.src = './js/firebase-config.js';       
       }
@@ -39,7 +39,7 @@ function cargarScripts() {
         logScript.type = 'module';
         //si el documento esta dentro de pages (no es el index)          
         currentLocation = window.location.href.split("/").pop();
-        if (currentLocation == 'index.html' || 'kitchen-management')
+        if (currentLocation == 'index.html' || '')
         {
             logScript.src = './js/log.js';       
         }
@@ -52,7 +52,7 @@ function cargarScripts() {
       const langScript = document.createElement('script');
       langScript.type = 'module';
       //si el documento esta dentro de pages (no es el index)
-        if (currentLocation == 'index.html' || 'kitchen-management')
+        if (currentLocation == 'index.html' || '')
         {
             langScript.src = './js/lang.js';       
         }
@@ -63,7 +63,7 @@ function cargarScripts() {
       const idiomaScript = document.createElement('script');
       idiomaScript.type = 'module';
       //si el documento esta dentro de pages (no es el index)
-        if (currentLocation == 'index.html' || 'kitchen-management')
+        if (currentLocation == 'index.html' || '')
         {
             idiomaScript.src = './js/idioma.js';       
         }
