@@ -17,14 +17,11 @@ document.addEventListener('DOMContentLoaded', function () {
     //por eso tengo que saber en que nivel estamos en el url para saber como manejar la ruta relativa /cocinapp/index.html (1 nivel), /cocinapp/pages/pedidos (2 niveles)
     let currentLocation = window.location.href.split("/").pop(); //aqui selecciono la ultima seccion de la url separada por /
 
-    if (currentLocation == 'index.html')//la web esta hosteada de forma que la url termina en index.html
+    if (currentLocation == 'index.html' || currentLocation == '')//la web esta hosteada de forma que la url termina en index.html
     {
         logo.href = './index.html'; //la url del logo sera el actual
     }
-    else if (currentLocation == '')//la web esta hosteada de forma que la url termina en kitchen-management/ (github pages)
-    {
-        logo.href = './kitchen-management'; //en lugar de reemplazar la ultima seccion por index.html, sera la carpeta root del repositorio
-    }
+
     else
     {
         logo.href = '../index.html'; //significa que estamos en el segundo nivel y tenemos que volver atras una vez para que la ruta relativa de index.html sea correcta
