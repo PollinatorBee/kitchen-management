@@ -19,16 +19,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (currentLocation == 'index.html')//la web esta hosteada de forma que la url termina en index.html
     {
-        logo.href = './index.html' //la url del logo sera el actual
+        logo.href = './index.html'; //la url del logo sera el actual
     }
-    else if (currentLocation == ' ')//la web esta hosteada de forma que la url termina en kitchen-management/ (github pages)
+    else if (currentLocation == '')//la web esta hosteada de forma que la url termina en kitchen-management/ (github pages)
     {
-        logo.href = './kitchen-management' //en lugar de reemplazar la ultima seccion por index.html, sera la carpeta root del repositorio
+        console.log(currentLocation);
+        logo.href = './kitchen-management'; //en lugar de reemplazar la ultima seccion por index.html, sera la carpeta root del repositorio
     }
     else
     {
-        console.log(currentLocation)
-        logo.href = '../index.html' //significa que estamos en el segundo nivel y tenemos que volver atras una vez para que la ruta relativa de index.html sea correcta
+        logo.href = '../index.html'; //significa que estamos en el segundo nivel y tenemos que volver atras una vez para que la ruta relativa de index.html sea correcta
     }
     
     //la imagrn que ira dentro del logo.
