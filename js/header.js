@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const logo = document.createElement('a');
     logo.className = 'navbar-brand';
     //hago esto de aqui abajo para saber que url ponerle al boton del logo para llevarnos a la pagina principal, sin tener que poner una ruta absoluta
-    //por eso tengo que saber en que nivel estamos en el url para saber como manejar la ruta relativa /cocinapp/index.html (1 nivel), /cocinapp/pedidos (2 niveles)
+    //por eso tengo que saber en que nivel estamos en el url para saber como manejar la ruta relativa /cocinapp/index.html (1 nivel), /cocinapp/pages/pedidos (2 niveles)
     let currentLocation = window.location.href.split("/").pop(); //aqui selecciono la ultima seccion de la url separada por /
 
     if (currentLocation == 'index.html' || currentLocation == '')
