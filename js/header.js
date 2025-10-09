@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     //la imagrn que ira dentro del logo.
     const imgLogo = document.createElement('img');
-    if(window.location.href.split("/").pop() == 'index.html' || window.location.href.split("/").pop() == 'kitchen-management'){
+    if(window.location.href.split("/").pop() == 'index.html' || window.location.href.split("/").pop() == ''){
         imgLogo.src = "./images/iconos/cocinaApp.png";
     }else{
         imgLogo.src = "../images/iconos/cocinaApp.png";
