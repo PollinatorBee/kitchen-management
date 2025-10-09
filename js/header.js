@@ -13,16 +13,28 @@ document.addEventListener('DOMContentLoaded', function () {
     //imagen logo
     const logo = document.createElement('a');
     logo.className = 'navbar-brand';
-    window.location.href.split("/").pop() == 'index.html'? logo.href = './index.html' : logo.href = '../index.html';
-        //la imagrn que ira dentro del logo.
-        const imgLogo = document.createElement('img');
-        if(window.location.href.split("/").pop() == 'index.html'){
-            imgLogo.src = "./images/iconos/cocinaApp.png";
-        }else{
-            imgLogo.src = "../images/iconos/cocinaApp.png";
-        }
-        imgLogo.alt = "logo cocinApp";
-        logo.appendChild(imgLogo);
+    //hago esto de aqui abajo para saber que url ponerle al boton del logo para llevarnos a la pagina principal, sin tener que poner una ruta absoluta
+    //por eso tengo que saber en que nivel estamos en el url para saber como manejar la ruta relativa /cocinapp/index.html (1 nivel), /cocinapp/pedidos (2 niveles)
+    let currentLocation = window.location.href.split("/").pop(); //aqui selecciono la ultima seccion de la url separada por /
+
+    if (currentLocation == 'index.html' || currentLocation == '')
+    {
+        logo.href = './index.html' //la url del logo sera el actual
+    }
+    else
+    {
+        logo.href = '../index.html' //significa que estamos en el segundo nivel y tenemos que volver atras una vez para que la ruta relativa de index.html sea correcta
+    }
+    
+    //la imagrn que ira dentro del logo.
+    const imgLogo = document.createElement('img');
+    if(window.location.href.split("/").pop() == 'index.html'){
+        imgLogo.src = "./images/iconos/cocinaApp.png";
+    }else{
+        imgLogo.src = "../images/iconos/cocinaApp.png";
+    }
+    imgLogo.alt = "logo cocinApp";
+    logo.appendChild(imgLogo);
     navbar.appendChild(logo);
 
     // Contenido del titulo
