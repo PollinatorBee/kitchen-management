@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     else if (currentLocation == 'kitchen-management')//la web esta hosteada de forma que la url termina en kitchen-management/ (github pages)
     {
-        logo.href = '../kitchen-management' //en lugar de reemplazar la ultima seccion por index.html, sera la carpeta root del repositorio
+        logo.href = './kitchen-management' //en lugar de reemplazar la ultima seccion por index.html, sera la carpeta root del repositorio
     }
     else
     {
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     //la imagrn que ira dentro del logo.
     const imgLogo = document.createElement('img');
-    if(window.location.href.split("/").pop() == 'index.html'){
+    if(window.location.href.split("/").pop() == 'index.html' || window.location.href.split("/").pop() == 'kitchen-management'){
         imgLogo.src = "./images/iconos/cocinaApp.png";
     }else{
         imgLogo.src = "../images/iconos/cocinaApp.png";
@@ -78,7 +78,12 @@ document.addEventListener('DOMContentLoaded', function () {
             const racionesLink = document.createElement('a');
             racionesLink.className = 'nav-link';
             racionesLink.id = 'raciones';
-            window.location.href.split("/").pop() == 'index.html'? racionesLink.href = './pages/raciones.html' : racionesLink.href = '../pages/raciones.html';
+
+            if(window.location.href.split("/").pop() == 'index.html' || window.location.href.split("/").pop() == 'kitchen-management'){
+                racionesLink.href = './pages/raciones.html';
+            }else{
+                racionesLink.href = '../pages/raciones.html';
+            }
             racionesItem.appendChild(racionesLink);
             menuList.appendChild(racionesItem);
 
@@ -88,8 +93,12 @@ document.addEventListener('DOMContentLoaded', function () {
             const pedidosLink = document.createElement('a');
             pedidosLink.className = 'nav-link';
             pedidosLink.id = 'pedidos';
-            window.location.href.split("/").pop() == 'index.html'? pedidosLink.href = './pages/pedidos.html' : pedidosLink.href = '../pages/pedidos.html';
-            ;
+
+            if(window.location.href.split("/").pop() == 'index.html' || window.location.href.split("/").pop() == 'kitchen-management'){
+                pedidosLink.href = './pages/pedidos.html';
+            }else{
+                pedidosLink.href = '../pages/pedidos.html';
+            }
             pedidosItem.appendChild(pedidosLink);
             menuList.appendChild(pedidosItem);
 
@@ -99,8 +108,12 @@ document.addEventListener('DOMContentLoaded', function () {
             const resultLink = document.createElement('a');
             resultLink.className = 'nav-link';
             resultLink.id = 'resultados';
-            window.location.href.split("/").pop() == 'index.html'? resultLink.href = './pages/resultados.html' : resultLink.href = '../pages/resultados.html';
-            ;
+
+            if(window.location.href.split("/").pop() == 'index.html' || window.location.href.split("/").pop() == 'kitchen-management'){
+                resultLink.href = './pages/resultados.html';
+            }else{
+                resultLink.href = '../pages/resultados.html';
+            }
             resultItem.appendChild(resultLink);
             menuList.appendChild(resultItem);
 
