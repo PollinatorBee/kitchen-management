@@ -17,11 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
     //por eso tengo que saber en que nivel estamos en el url para saber como manejar la ruta relativa /cocinapp/index.html (1 nivel), /cocinapp/pages/pedidos (2 niveles)
     let currentLocation = window.location.href.split("/").pop(); //aqui selecciono la ultima seccion de la url separada por /
 
-    if (currentLocation == 'index.html' || currentLocation == '')//la web esta hosteada de forma que la url termina en index.html
+    if (currentLocation == 'index.html' || currentLocation == '')//la web esta hosteada de forma que la url termina en index.html o root /
     {
         logo.href = './index.html'; //la url del logo sera el actual
     }
-
     else
     {
         logo.href = '../index.html'; //significa que estamos en el segundo nivel y tenemos que volver atras una vez para que la ruta relativa de index.html sea correcta
@@ -29,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     //la imagrn que ira dentro del logo.
     const imgLogo = document.createElement('img');
-    if(window.location.href.split("/").pop() == 'index.html' || window.location.href.split("/").pop() == ''){
+    if (currentLocation == 'index.html' || currentLocation == ''){
         imgLogo.src = "./images/iconos/cocinaApp.png";
     }else{
         imgLogo.src = "../images/iconos/cocinaApp.png";
@@ -76,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
             racionesLink.className = 'nav-link';
             racionesLink.id = 'raciones';
 
-            if(window.location.href.split("/").pop() == 'index.html' || window.location.href.split("/").pop() == 'kitchen-management'){
+            if (currentLocation == 'index.html' || currentLocation == ''){
                 racionesLink.href = './pages/raciones.html';
             }else{
                 racionesLink.href = '../pages/raciones.html';
@@ -91,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
             pedidosLink.className = 'nav-link';
             pedidosLink.id = 'pedidos';
 
-            if(window.location.href.split("/").pop() == 'index.html' || window.location.href.split("/").pop() == 'kitchen-management'){
+            if (currentLocation == 'index.html' || currentLocation == ''){
                 pedidosLink.href = './pages/pedidos.html';
             }else{
                 pedidosLink.href = '../pages/pedidos.html';
@@ -106,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
             resultLink.className = 'nav-link';
             resultLink.id = 'resultados';
 
-            if(window.location.href.split("/").pop() == 'index.html' || window.location.href.split("/").pop() == 'kitchen-management'){
+            if (currentLocation == 'index.html' || currentLocation == ''){
                 resultLink.href = './pages/resultados.html';
             }else{
                 resultLink.href = '../pages/resultados.html';
