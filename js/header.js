@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     else if (currentLocation == 'kitchen-management')//la web esta hosteada de forma que la url termina en kitchen-management/ (github pages)
     {
-        logo.href = './kitchen-management' //en lugar de reemplazar la ultima seccion por index.html, sera la carpeta root del repositorio
+        logo.href = '../kitchen-management' //en lugar de reemplazar la ultima seccion por index.html, sera la carpeta root del repositorio
     }
     else
     {
