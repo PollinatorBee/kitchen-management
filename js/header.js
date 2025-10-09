@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     else
     {
+        console.log(currentLocation)
         logo.href = '../index.html' //significa que estamos en el segundo nivel y tenemos que volver atras una vez para que la ruta relativa de index.html sea correcta
     }
     
