@@ -26,9 +26,10 @@ function cargarScripts() {
       let currentLocation = window.location.href.split("/").pop();
       if (currentLocation == 'index.html' || '')
       {
+          console.log("primer");
           firebaseConfigScript.src = './js/firebase-config.js';       
       }
-      else {firebaseConfigScript.src = '../js/firebase-config.js';}
+      else {console.log("segundo");firebaseConfigScript.src = '../js/firebase-config.js';}
       body.appendChild(firebaseConfigScript);
 
       //si la página es login.html se cargará el script auth.js
