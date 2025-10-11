@@ -29,11 +29,3 @@ This is a demo version of the project with sample data and a separate Firebase e
 
 ⚙️ The Firestore database for this demo is automatically reset daily to restore default sample data.
 Any changes made during testing will be cleared every 24 hours.
-
-### 💾 Installation
-To run a local version:
-
-1. Clone this repository or download as zip
-2. 
-   git clone https://github.com/tu-usuario/order-management.git
-   cd order-management
