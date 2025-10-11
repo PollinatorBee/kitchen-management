@@ -30,10 +30,3 @@ Esta es una versión demo del proyecto, con datos de ejemplo y un entorno de Fir
 ⚙️ La base de datos Firestore para esta demo es reseteada automaticamente cada dia para restaurar los datos por defecto.
 Cualquier cambio hecho sera borrado cada 24 horas.
 
-### 💾 Installation
-To run a local version:
-
-1. Clone this repository or download as zip
-2. 
-   git clone https://github.com/tu-usuario/order-management.git
-   cd order-management
