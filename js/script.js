@@ -24,13 +24,11 @@ function cargarScripts() {
       firebaseConfigScript.type = 'module';
       //si el documento esta dentro de pages (no es el index)
       let currentLocation = window.location.href.split("/").pop();
-      if (currentLocation == 'index.html' || '')
+      if (currentLocation == 'index.html' || currentLocation == '')
       {
-          console.log("primer");
-          console.log(currentLocation);
           firebaseConfigScript.src = './js/firebase-config.js';       
       }
-      else {console.log("segundo"); console.log(currentLocation); firebaseConfigScript.src = '../js/firebase-config.js';}
+      else {firebaseConfigScript.src = '../js/firebase-config.js';}
       body.appendChild(firebaseConfigScript);
 
       //si la página es login.html se cargará el script auth.js
@@ -41,7 +39,7 @@ function cargarScripts() {
         logScript.type = 'module';
         //si el documento esta dentro de pages (no es el index)          
         currentLocation = window.location.href.split("/").pop();
-        if (currentLocation == 'index.html' || '')
+        if (currentLocation == 'index.html' || currentLocation == '')
         {
             logScript.src = './js/log.js';       
         }
@@ -54,7 +52,7 @@ function cargarScripts() {
       const langScript = document.createElement('script');
       langScript.type = 'module';
       //si el documento esta dentro de pages (no es el index)
-        if (currentLocation == 'index.html' || '')
+        if (currentLocation == 'index.html' || currentLocation == '')
         {
             langScript.src = './js/lang.js';       
         }
@@ -65,7 +63,7 @@ function cargarScripts() {
       const idiomaScript = document.createElement('script');
       idiomaScript.type = 'module';
       //si el documento esta dentro de pages (no es el index)
-        if (currentLocation == 'index.html' || '')
+        if (currentLocation == 'index.html' || currentLocation == '')
         {
             idiomaScript.src = './js/idioma.js';       
         }
