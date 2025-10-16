@@ -1,4 +1,4 @@
-🌐 Available in [English](./README.md) | Disponible en [Español](./README.es.md)
+🌐 Available in [English](./README.md) 
 
 # 🍽️ Kitchen Management Web App | CocinApp
 
@@ -29,4 +29,12 @@ Esta es una versión demo del proyecto, con datos de ejemplo y un entorno de Fir
 
 ⚙️ La base de datos Firestore para esta demo es reseteada automaticamente cada dia para restaurar los datos por defecto.
 Cualquier cambio hecho sera borrado cada 24 horas.
+
+## 📄 Documentación
+- [Manual de Usuario](https://pollinatorbee.github.io/kitchen-management/docs/manuals/Manual_de_usuario.pdf)
+- [Manual de Desarrollador](https://pollinatorbee.github.io/kitchen-management/docs/manuals/Manual-desarrollador.pdf)
+  -   [Diagrama tarea editable](https://pollinatorbee.github.io/kitchen-management/docs/manuals/Diagrama_Tarea_editable.drawio.pdf)
+  -   [Tarea actualizar edicion pedido](https://pollinatorbee.github.io/kitchen-management/docs/manuals/AppCocina_Tarea_actualizar_edicion_Pedido.pdf)
+  -   [Manual de desarrollador - servidor](https://pollinatorbee.github.io/kitchen-management/docs/manuals/Manual_de_desarrollador_servidor.pdf)
+- [Plan de Pruebas](https://pollinatorbee.github.io/kitchen-management/docs/Plan-pruebas.pdf)
 
