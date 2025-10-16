@@ -29,3 +29,12 @@ This is a demo version of the project with sample data and a separate Firebase e
 
 ⚙️ The Firestore database for this demo is automatically reset daily to restore default sample data.
 Any changes made during testing will be cleared every 24 hours.
+
+## 📄 Documentación
+- [Manual de Usuario](https://pollinatorbee.github.io/kitchen-management/docs/manuals/Manual_de_usuario.pdf)
+- [Manual de Desarrollador](https://pollinatorbee.github.io/kitchen-management/docs/manuals/Manual-desarrollador.pdf)
+-   [Diagrama tarea editable](https://pollinatorbee.github.io/kitchen-management/docs/manuals/Diagrama_Tarea_editable.drawio.pdf)
+-   [Diagrama tarea editable](https://pollinatorbee.github.io/kitchen-management/docs/manuals/AppCocina_Tarea_actualizar_edicion_Pedido.pdf)
+-   [Diagrama tarea editable](https://pollinatorbee.github.io/kitchen-management/docs/manuals/Manual_de_desarrollador_servidor.pdf)
+- [Plan de Pruebas](https://pollinatorbee.github.io/kitchen-management/docs/Plan-pruebas.pdf)
+
