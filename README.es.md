@@ -18,7 +18,7 @@ Esta es una versión demo del proyecto, con datos de ejemplo y un entorno de Fir
 - Hosting en Firebase para pruebas con la demo  
 
 ### 🛠️ Tecnologías
-- **Frontend:** JavaScript puro, HTML, CSS 
+- **Frontend:** JavaScript, HTML, CSS 
 - **Backend / Database:** Firebase (Authentication, Firestore, Hosting)  
 - **Version control:** Git + GitHub  
 - **Project management:** Trello, Discord para reuniones con el equipo  
