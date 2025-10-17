@@ -30,7 +30,7 @@ Esta es una versión demo del proyecto, con datos de ejemplo y un entorno de Fir
 ⚙️ La base de datos Firestore para esta demo es reseteada automaticamente cada dia para restaurar los datos por defecto.
 Cualquier cambio hecho sera borrado cada 24 horas.
 
-## 📄 Documentación
+### 📄 Documentación
 - [Manual de Usuario](https://pollinatorbee.github.io/kitchen-management/docs/manuals/Manual_de_usuario.pdf)
 - [Manual de Desarrollador](https://pollinatorbee.github.io/kitchen-management/docs/manuals/Manual-desarrollador.pdf)
   -   [Diagrama tarea editable](https://pollinatorbee.github.io/kitchen-management/docs/manuals/Diagrama_Tarea_editable.drawio.pdf)
